@@ -5,6 +5,8 @@ set tabstop=4
 set shiftwidth=4
 set cmdheight=1
 set hid
+set nowrap
+set nu
 set backspace=eol,start,indent
 set smartcase
 set showmatch
