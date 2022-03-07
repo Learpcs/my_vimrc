@@ -1,0 +1,16 @@
+syntax on
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nu
+set nowrap
+set backspace=indent,eol,start
+set guifont=Consolas:h20
+set smartcase
+set noswapfile
+set nobackup
+set incsearch
+
+map <F8> : !g++ % && a.exe <CR>
+
