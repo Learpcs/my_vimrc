@@ -1,12 +1,11 @@
 syntax enable
 set nowrap
-set nu
-set ruler
+set nu rnu
+set number relativenumber
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set cmdheight=1
-set hid
 set backspace=eol,start,indent
 set smartcase
 set showmatch
@@ -27,4 +26,4 @@ vnoremap <Up> <Nop>
 vnoremap <Down> <Nop>
 vnoremap <Left> <Nop>
 vnoremap <Right> <Nop>
-map <F8> :w <CR> !g++ % && ./a.out <CR> 
+map <F8> :w <CR> :!g++ % && ./a.out <CR> 
