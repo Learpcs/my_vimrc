@@ -1,5 +1,6 @@
 syntax on
 set tabstop=4 softtabstop=4
+set nowb
 set shiftwidth=4
 set expandtab
 set smartindent
@@ -11,6 +12,17 @@ set smartcase
 set noswapfile
 set nobackup
 set incsearch
-
-map <F8> : !g++ % && a.exe <CR>
-
+vnoremap <C-c> "+y
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+vnoremap <Up> <Nop>
+vnoremap <Down> <Nop>
+vnoremap <Left> <Nop>
+vnoremap <Right> <Nop>
+map <F8> :w <CR> !g++ % && a.exe <CR> 
