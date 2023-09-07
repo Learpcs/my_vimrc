@@ -12,18 +12,5 @@ set guifont=Consolas:h20
 set smartcase
 set noswapfile
 set nobackup
-set incsearch
-vnoremap <C-c> "+y
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-vnoremap <Up> <Nop>
-vnoremap <Down> <Nop>
-vnoremap <Left> <Nop>
-vnoremap <Right> <Nop>
-map <F8> :w <CR> !g++ % && a.exe <CR> 
+map <F9> :w <CR> :!g++ % <CR>
+map <F1> :!a.exe <CR>
