@@ -1,16 +1,10 @@
 syntax enable
-set tabstop=4 softtabstop=4
-set nowb
-set shiftwidth=4
+set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab
 set smartindent
 set nu rnu
-set number relativenumber
 set nowrap
 set backspace=indent,eol,start
 set guifont=Consolas:h20
-set smartcase
-set noswapfile
-set nobackup
-map <F9> :w <CR> :!g++ % <CR>
-map <F1> :!a.exe <CR>
+map <F9> :w <CR> :!g++ -Wall -Wextra -Wpedantic -Wshadow -Wfloat-equal -Wconversion -D_DEBUG -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC % -o %:r.exe <CR>
+map <F1> :!%:r.exe <CR>
