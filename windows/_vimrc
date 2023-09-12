@@ -1,10 +1,12 @@
 syntax enable
-set tabstop=4 softtabstop=4 shiftwidth=4
+set tabstop=3 softtabstop=3 shiftwidth=3
 set expandtab
+set smarttab
 set smartindent
 set nu rnu
 set nowrap
 set backspace=indent,eol,start
 set guifont=Consolas:h20
-map <F9> :w <CR> :!g++ -Wall -Wextra -Wpedantic -Wshadow -Wfloat-equal -Wconversion -D_DEBUG -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC % -o %:r.exe <CR>
+map <F9> :w <CR> :!g++ -std=c++17 -Wall -Wextra -Wpedantic -Wshadow -Wfloat-equal -Wconversion -D_DEBUG -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC % -o %:r.exe <CR>
+map <F2> :w <CR> :!py % <CR>
 map <F1> :!%:r.exe <CR>
